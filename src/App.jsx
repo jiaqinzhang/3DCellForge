@@ -1,3 +1,4 @@
+import SolarSystem from './viewer/SolarSystem.jsx'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Info, X } from 'lucide-react'
