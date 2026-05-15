@@ -1,3 +1,4 @@
+import SolarSystem from './viewer/SolarSystem.jsx'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Info, X } from 'lucide-react'
@@ -255,7 +256,7 @@ function App() {
       setToast(`Presentation: ${nextCell.name}`)
     }, 9200)
 
-    return () => window.clearInterval(timer)
+    return <SolarSystem /> => window.clearInterval(timer)
   }, [allCells, customCells, demoMode, selectedCell])
 
   useEffect(() => {
